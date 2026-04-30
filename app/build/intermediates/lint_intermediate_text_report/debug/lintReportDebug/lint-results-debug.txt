@@ -1,0 +1,172 @@
+D:\AndroidStudioProjects\Already\app\build.gradle.kts:81: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk = 35
+        ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application runs on a version of Android that is more recent than
+   your targetSdkVersion specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdkVersion
+   is less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+D:\AndroidStudioProjects\Already\app\src\main\AndroidManifest.xml:15: Warning: Attribute localeConfig is only used in API level 33 and higher (current min is 26) [UnusedAttribute]
+        android:localeConfig="@xml/locales_config"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedAttribute":
+   This check finds attributes set in XML files that were introduced in a
+   version newer than the oldest version targeted by your application (with
+   the minSdkVersion attribute).
+
+   This is not an error; the application will simply ignore the attribute.
+   However, if the attribute is important to the appearance or functionality
+   of your application, you should consider finding an alternative way to
+   achieve the same result with only available attributes, and then you can
+   optionally create a copy of the layout in a layout-vNN folder which will be
+   used on API NN or higher where you can take advantage of the newer
+   attribute.
+
+   Note: This check does not only apply to attributes. For example, some tags
+   can be unused too, such as the new <tag> element in layouts introduced in
+   API 21.
+
+D:\AndroidStudioProjects\Already\app\build.gradle.kts:156: Warning: A newer version of androidx.core:core-ktx than 1.15.0 is available: 1.18.0 [GradleDependency]
+    implementation("androidx.core:core-ktx:1.15.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\build.gradle.kts:157: Warning: A newer version of androidx.appcompat:appcompat than 1.7.0 is available: 1.7.1 [GradleDependency]
+    implementation("androidx.appcompat:appcompat:1.7.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\build.gradle.kts:158: Warning: A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.8.7 is available: 2.10.0 [GradleDependency]
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\build.gradle.kts:159: Warning: A newer version of androidx.lifecycle:lifecycle-runtime-compose than 2.8.7 is available: 2.10.0 [GradleDependency]
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\build.gradle.kts:160: Warning: A newer version of androidx.lifecycle:lifecycle-viewmodel-compose than 2.8.7 is available: 2.10.0 [GradleDependency]
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\build.gradle.kts:161: Warning: A newer version of androidx.activity:activity-compose than 1.10.1 is available: 1.13.0 [GradleDependency]
+    implementation("androidx.activity:activity-compose:1.10.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\build.gradle.kts:163: Warning: A newer version of androidx.datastore:datastore-preferences than 1.1.1 is available: 1.2.1 [GradleDependency]
+    implementation("androidx.datastore:datastore-preferences:1.1.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\build.gradle.kts:164: Warning: A newer version of androidx.room:room-runtime than 2.6.1 is available: 2.8.4 [GradleDependency]
+    implementation("androidx.room:room-runtime:$roomVersion")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\build.gradle.kts:165: Warning: A newer version of androidx.room:room-ktx than 2.6.1 is available: 2.8.4 [GradleDependency]
+    implementation("androidx.room:room-ktx:$roomVersion")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\build.gradle.kts:166: Warning: A newer version of androidx.security:security-crypto than 1.0.0 is available: 1.1.0 [GradleDependency]
+    implementation("androidx.security:security-crypto:1.0.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\build.gradle.kts:167: Warning: A newer version of com.android.billingclient:billing-ktx than 8.0.0 is available: 8.3.0 [GradleDependency]
+    implementation("com.android.billingclient:billing-ktx:8.0.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\build.gradle.kts:168: Warning: A newer version of com.google.android.gms:play-services-ads than 24.7.0 is available: 25.2.0 [GradleDependency]
+    implementation("com.google.android.gms:play-services-ads:24.7.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\build.gradle.kts:169: Warning: A newer version of com.google.android.ump:user-messaging-platform than 3.2.0 is available: 4.0.0 [GradleDependency]
+    implementation("com.google.android.ump:user-messaging-platform:3.2.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\build.gradle.kts:174: Warning: A newer version of androidx.compose.material3:material3 than 1.3.1 is available: 1.4.0 [GradleDependency]
+    implementation("androidx.compose.material3:material3:1.3.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\build.gradle.kts:176: Warning: A newer version of com.google.android.material:material than 1.12.0 is available: 1.13.0 [GradleDependency]
+    implementation("com.google.android.material:material:1.12.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\build.gradle.kts:177: Warning: A newer version of androidx.room:room-compiler than 2.6.1 is available: 2.8.4 [GradleDependency]
+    ksp("androidx.room:room-compiler:$roomVersion")
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+D:\AndroidStudioProjects\Already\app\src\main\res\values-en\strings_future_self.xml:70: Warning: Formatting %d followed by words ("years"): This should probably be a plural rather than a string [PluralsCandidate]
+    <string name="future_self_year_pill_default">%1$d years ahead</string>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\src\main\res\values\strings_future_self.xml:70: Warning: Formatting %d followed by words ("years"): This should probably be a plural rather than a string [PluralsCandidate]
+    <string name="future_self_year_pill_default">%1$d years ahead</string>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\src\main\res\values-en\strings_future_self.xml:71: Warning: Formatting %d followed by words ("years"): This should probably be a plural rather than a string [PluralsCandidate]
+    <string name="future_self_year_pill_selected">%1$d years ahead · %2$d</string>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\src\main\res\values\strings_future_self.xml:71: Warning: Formatting %d followed by words ("years"): This should probably be a plural rather than a string [PluralsCandidate]
+    <string name="future_self_year_pill_selected">%1$d years ahead · %2$d</string>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "PluralsCandidate":
+   This lint check looks for potential errors in internationalization where
+   you have translated a message which involves a quantity and it looks like
+   other parts of the string may need grammatical changes.
+
+   For example, rather than something like this:
+     <string name="try_again">Try again in %d seconds.</string>
+   you should be using a plural:
+      <plurals name="try_again">
+           <item quantity="one">Try again in %d second</item>
+           <item quantity="other">Try again in %d seconds</item>
+       </plurals>
+   This will ensure that in other languages the right set of translations are
+   provided for the different quantity classes.
+
+   (This check depends on some heuristics, so it may not accurately determine
+   whether a string really should be a quantity. You can use tools:ignore to
+   filter out false positives.
+
+   https://developer.android.com/guide/topics/resources/string-resource.html#Plurals
+
+D:\AndroidStudioProjects\Already\app\src\main\java\com\futureself\core\notifications\FutureSelfReminderScheduler.kt:19: Warning: Unnecessary; SDK_INT is never < 26 [ObsoleteSdkInt]
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) return
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\src\main\java\com\futureself\ui\FutureSelfStrings.kt:20: Warning: Unnecessary; SDK_INT is always >= 26 [ObsoleteSdkInt]
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\AndroidStudioProjects\Already\app\src\main\res\mipmap-anydpi-v26: Warning: This folder configuration (v26) is unnecessary; minSdkVersion is 26. Merge all the resources in this folder into mipmap-anydpi. [ObsoleteSdkInt]
+D:\AndroidStudioProjects\Already\app\src\main\res\values\themes.xml:5: Warning: Unnecessary; SDK_INT is always >= 23 [ObsoleteSdkInt]
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+                                                  ~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ObsoleteSdkInt":
+   This check flags version checks that are not necessary, because the
+   minSdkVersion (or surrounding known API level) is already at least as high
+   as the version checked for.
+
+   Similarly, it also looks for resources in -vNN folders, such as values-v14
+   where the version qualifier is less than or equal to the minSdkVersion,
+   where the contents should be merged into the best folder.
+
+D:\AndroidStudioProjects\Already\app\src\main\res\mipmap-anydpi-v26\ic_launcher_round.xml:2: Warning: The resource R.mipmap.ic_launcher_round appears to be unused [UnusedResources]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+0 errors, 27 warnings

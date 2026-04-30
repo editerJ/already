@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.7.3" type="conditional_incidents">
+
+    <incident
+        id="NotificationPermission"
+        severity="error"
+        message="When targeting Android 13 or higher, posting a permission requires holding the `POST_NOTIFICATIONS` permission">
+        <fix-data missing="android.permission.POST_NOTIFICATIONS"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/core/notifications/FutureSelfReminderReceiver.kt"
+            line="67"
+            column="9"
+            startOffset="2741"
+            endLine="67"
+            endColumn="97"
+            endOffset="2829"/>
+    </incident>
+
+    <incident
+        id="UnusedAttribute"
+        severity="warning"
+        message="">
+        <fix-data minSdk="fffffffffe000000" requiresApi="ffffffff00000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="15"
+            column="9"
+            startOffset="737"
+            endLine="15"
+            endColumn="51"
+            endOffset="779"/>
+        <map>
+            <entry
+                name="message"
+                string="Attribute `localeConfig` is only used in API level 33 and higher (current min is %1$s)"/>
+            <api-levels id="minSdk"
+                value="fffffffffe000000"/>
+            <api-levels id="requiresApi"
+                value="ffffffff00000000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 23">
+        <fix-replace
+            description="Delete tools:targetApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/themes.xml"
+                startOffset="348"
+                endOffset="368"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/themes.xml"
+            line="5"
+            column="51"
+            startOffset="348"
+            endLine="5"
+            endColumn="71"
+            endOffset="368"/>
+        <map>
+            <condition minGE="ffffffffffc00000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 27">
+        <fix-replace
+            description="Delete tools:targetApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/themes.xml"
+                startOffset="435"
+                endOffset="455"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/themes.xml"
+            line="6"
+            column="55"
+            startOffset="435"
+            endLine="6"
+            endColumn="75"
+            endOffset="455"/>
+        <map>
+            <condition minGE="fffffffffc000000"/>
+        </map>
+    </incident>
+
+</incidents>

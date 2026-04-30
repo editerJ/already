@@ -1,0 +1,33 @@
+<variant
+    name="debug"
+    useSupportLibraryVectorDrawables="true"
+    package="com.already.app"
+    minSdkVersion="26"
+    targetSdkVersion="35"
+    debuggable="true"
+    mergedManifest="build\intermediates\merged_manifest\debug\processDebugMainManifest\AndroidManifest.xml"
+    partialResultsDir="build\intermediates\unit_test_lint_partial_results\debug\lintAnalyzeDebugUnitTest\out"
+    desugaredMethodsFiles="C:\Users\Jeiheewon\.gradle\caches\8.13\transforms\b0e07fb02cb92df0f1e6046e1f87d421\transformed\D8BackportedDesugaredMethods.txt">
+  <buildFeatures
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+  </sourceProviders>
+  <testSourceProviders>
+    <sourceProvider
+        manifests="src\test\AndroidManifest.xml"
+        javaDirectories="src\test\java;src\testDebug\java;src\test\kotlin;src\testDebug\kotlin"
+        assetsDirectories="src\test\assets;src\testDebug\assets"
+        unitTest="true"/>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <resValues>
+    <resValue
+        type="string"
+        name="admob_app_id"
+        value="ca-app-pub-4761028812147364~8935544710" />
+  </resValues>
+  <artifact
+      type="UNIT_TEST">
+  </artifact>
+</variant>

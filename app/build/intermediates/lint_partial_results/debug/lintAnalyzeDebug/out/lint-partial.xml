@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.7.3" type="partial_results">
+    <map id="NotificationPermission">
+        <entry
+            name="source"
+            boolean="true"/>
+    </map>
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.futureself.FutureSelfMainActivity"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.mipmap.ic_launcher_round"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26/ic_launcher_round.xml"
+            line="2"
+            column="1"
+            startOffset="39"
+            endLine="6"
+            endColumn="17"
+            endOffset="343"/>
+        <entry
+            name="model"
+            string="drawable[ic_launcher_background(U),ic_launcher_foreground(U),ic_launcher_wordmark(U),ic_launcher_monochrome(U),ic_launcher_wordmark_mono(U)],mipmap[ic_already_launcher(U),ic_already_launcher_round(U),ic_launcher(U),ic_launcher_round(D)],string[app_name(U),admob_app_id(U),future_self_today_mission(U),future_self_coach_section(U),future_self_calendar_section(U),future_self_progress_section(U),future_self_recent_entries(U),future_self_write_today_link(U),future_self_home_greeting(U),future_self_streak_label(U),future_self_write_header(U),future_self_save(U),future_self_write_placeholder(U),future_self_ai_guide_link(U),future_self_ai_reward_active_status(U),future_self_ai_reward_inactive_status(U),future_self_ai_reward_hint(U),future_self_write_coach_hint(U),future_self_present_tense_hint(U),future_self_timeline_title(U),future_self_timeline_subtitle(U),future_self_timeline_empty(U),future_self_ai_sheet_title(U),future_self_ai_sheet_subtitle(U),future_self_ai_prompt_1(U),future_self_ai_prompt_2(U),future_self_ai_prompt_3(U),future_self_ai_prompt_4(U),future_self_nav_home(U),future_self_nav_write(U),future_self_nav_timeline(U),future_self_nav_settings(U),future_self_coach_locked_body(U),future_self_coach_locked_reminder(U),future_self_coach_next_step(U),future_self_coach_reminder(U),future_self_coach_recent_wins(U),future_self_quick_win_record(U),future_self_quick_win_dialog_title(U),future_self_quick_win_dialog_body(U),future_self_quick_win_placeholder(U),future_self_quick_win_save(U),future_self_quick_win_cancel(U),future_self_calendar_hint(U),future_self_progress_actions(U),future_self_progress_weekly(U),future_self_progress_growth(U),future_self_settings_title(U),future_self_settings_subtitle(U),future_self_settings_language_section(U),future_self_settings_language_title(U),future_self_settings_language_summary(U),future_self_settings_language_action(U),future_self_settings_reward_section(U),future_self_settings_reward_title(U),future_self_settings_reward_inactive(U),future_self_settings_reward_active(U),future_self_settings_reward_benefits(U),future_self_settings_reward_action(U),future_self_settings_reward_refresh(U),future_self_language_dialog_title(U),future_self_notification_title(U),future_self_notification_body(U),future_self_notification_body_with_win(U),future_self_notification_action(U),future_self_domain_work(U),future_self_domain_health(U),future_self_domain_family(U),future_self_domain_finance(U),future_self_domain_self(U),future_self_year_pill_default(U),future_self_year_pill_selected(U),future_self_default_mission(U),future_self_default_mission_why(U),future_self_default_mission_duration(U),future_self_coach_title(U),future_self_reward_guide_active(U),future_self_reward_guide_inactive(U),future_self_progress_msg_starting(U),future_self_progress_msg_growing(U),future_self_progress_msg_steady(U),future_self_next_step_no_journal(U),future_self_next_step_with_journal(U),future_self_reminder_no_win(U),future_self_reminder_with_win(U),future_self_ad_load_failed(U),future_self_notification_channel_name(U),future_self_notification_channel_description(U),future_self_settings_privacy_section(U),future_self_settings_privacy_title(U),future_self_settings_privacy_body(U),future_self_settings_privacy_action(U),future_self_settings_privacy_policy_action(U),future_self_settings_terms_action(U),future_self_settings_data_section(U),future_self_settings_data_title(U),future_self_settings_data_body(U),future_self_settings_data_action(U),future_self_settings_data_confirm_title(U),future_self_settings_data_confirm_body(U),future_self_settings_data_confirm_action(U),future_self_legal_privacy_title(U),future_self_legal_privacy_body(U),future_self_legal_terms_title(U),future_self_legal_terms_body(U)],style[Theme_Already(U),Theme_Material3_DayNight_NoActionBar(R)],xml[data_extraction_rules(U),backup_rules(U),locales_config(U),network_security_config(U)];1^2,3^4,5^0^1^3,6^0^1^3,7^0^1^3,8^0^1^3,72^73;;;"/>
+    </map>
+
+</incidents>

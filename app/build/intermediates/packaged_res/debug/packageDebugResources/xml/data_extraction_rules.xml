@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup disableIfNoEncryptionCapabilities="true">
+        <exclude domain="sharedpref" path="future_self_reward_store_secure.xml" />
+        <exclude domain="sharedpref" path="future_self_reward_store.xml" />
+        <exclude domain="database" path="future_self_database" />
+        <exclude domain="database" path="future_self_database-journal" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="sharedpref" path="future_self_reward_store_secure.xml" />
+        <exclude domain="sharedpref" path="future_self_reward_store.xml" />
+        <exclude domain="database" path="future_self_database" />
+        <exclude domain="database" path="future_self_database-journal" />
+    </device-transfer>
+</data-extraction-rules>

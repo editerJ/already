@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Already Legal</title>
+  <style>
+    :root {
+      --paper: #f6f1ea;
+      --ink: #1f1a17;
+      --muted: #7d746d;
+      --accent: #bf643c;
+      --line: #dfd3c6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #f8f4ee 0%, #f1e9df 100%);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.7;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 24px 72px;
+    }
+    .eyebrow {
+      color: var(--accent);
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin: 0 0 16px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(38px, 7vw, 64px);
+      font-style: italic;
+      font-weight: 500;
+      line-height: 1.05;
+    }
+    p {
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .grid {
+      display: grid;
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .card {
+      background: rgba(255,255,255,0.48);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px;
+      backdrop-filter: blur(8px);
+    }
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--ink);
+    }
+    .card p {
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    code {
+      background: rgba(191, 100, 60, 0.08);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      color: var(--ink);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Already</p>
+    <h1>Legal & support</h1>
+    <p>These pages are meant to be published through GitHub Pages and used directly in Google Play Console and inside the app.</p>
+
+    <section class="grid">
+      <article class="card">
+        <h2><a href="./privacy-policy.html">Privacy Policy</a></h2>
+        <p>Explains how local journaling data, consent signals, and rewarded ads are handled.</p>
+        <a href="./privacy-policy.html">Open privacy policy</a>
+      </article>
+
+      <article class="card">
+        <h2><a href="./terms-of-service.html">Terms of Service</a></h2>
+        <p>Covers the app scope, reward-based feature access, and user responsibilities.</p>
+        <a href="./terms-of-service.html">Open terms of service</a>
+      </article>
+    </section>
+
+    <footer>
+      After publishing GitHub Pages, use the site URL as <code>FUTURE_SELF_GITHUB_PAGES_BASE_URL</code>.
+      The app can automatically resolve the policy and terms URLs from that base path.
+    </footer>
+  </main>
+</body>
+</html>
